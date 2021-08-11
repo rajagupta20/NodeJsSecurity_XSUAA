@@ -5,7 +5,7 @@ applications:
   memory: 128M
   routes:
     - route: i065171-product-list-ap25.cfapps.eu10.hana.ondemand.com
-  path: myapp
+  path: nodejsapp
   buildpacks:
     - nodejs_buildpack  
   timeout: 180
@@ -26,6 +26,6 @@ applications:
     destinations: >
       [
         {"name":"products-destination",
-         "url":"https://product-list-ap25.cfapps.eu10.hana.ondemand.com",
+         "url":"https://i065171-product-list-ap25.cfapps.eu10.hana.ondemand.com",
          "forwardAuthToken": true}
       ]
